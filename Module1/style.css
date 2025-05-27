@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Community Event Portal - CSS3 Showcase</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Internal CSS -->
+  <style>
+    /* 1. Reset using universal selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* 1. Internal styling for body */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f9fb;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* 2. CSS syntax, formatting, comments */
+    /* Header styles */
+    #mainHeader {
+      background: linear-gradient(to right, #3498db, #2ecc71);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* 3. Selectors: ID, class, grouping */
+    h2 {
+      color: #2c3e50;
+    }
+
+    .eventCard {
+      border: 2px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      background: #ffffff;
+      outline: 2px dashed transparent;
+      transition: 0.3s;
+    }
+
+    .eventCard:focus-within {
+      outline-color: #2ecc71;
+    }
+
+    h3, p {
+      margin-bottom: 10px;
+    }
+
+    /* 4. Color and background styling */
+    .banner {
+      background: url('https://via.placeholder.com/1200x300') no-repeat center;
+      background-size: cover;
+      color: white;
+      padding: 40px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    /* 5. Typography */
+    .description {
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      text-align: justify;
+      text-transform: none;
+    }
+
+    /* 6. Link and list styling */
+    nav a:link, nav a:visited {
+      color: #2980b9;
+      text-decoration: none;
+      padding: 10px;
+    }
+    nav a:hover {
+      background: #dff9fb;
+      border-radius: 5px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    /* 7. Table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #bdc3c7;
+      padding: 10px;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ecf0f1;
+    }
+
+    /* 8. Box model and spacing */
+    .eventCard {
+      margin: 15px 0;
+      padding: 20px;
+      border: 1px solid #aaa;
+    }
+
+    /* 9. Multi-column layout */
+    .news {
+      column-count: 2;
+      column-gap: 30px;
+      column-rule: 1px solid gray;
+      margin-top: 30px;
+    }
+
+    /* 10. Responsive design with media query */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      body {
+        font-size: 14px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- 1. Inline style on heading -->
+  <h1 id="mainHeader" style="color: red;">Welcome to the Local Community Event Portal</h1>
+
+  <!-- 6. Navigation list -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 4. Banner with background image -->
+  <div class="banner">
+    <h2>Summer Fest 2025</h2>
+    <p>Join us for a week of fun, food, and festivities!</p>
+  </div>
+
+  <!-- 3. Event card -->
+  <div class="eventCard">
+    <h3>Community Clean-Up</h3>
+    <p class="description">Residents come together to clean the local parks and riversides. Bring your own tools and gloves. Snacks provided.</p>
+  </div>
+
+  <!-- 7. Table example -->
+  <h2>Upcoming Events</h2>
+  <table>
+    <tr>
+      <th>Event</th>
+      <th>Date</th>
+      <th>Location</th>
+    </tr>
+    <tr>
+      <td>Food Drive</td>
+      <td>Aug 12</td>
+      <td>City Hall</td>
+    </tr>
+    <tr>
+      <td>Music Night</td>
+      <td>Sep 5</td>
+      <td>Central Park</td>
+    </tr>
+  </table>
+
+  <!-- 9. Multi-column news -->
+  <div class="news">
+    <h2>Community Bulletin</h2>
+    <p>We're excited to announce that our city council has approved new funding for youth programs, including free coding workshops, after-school art classes, and sports leagues. These initiatives will foster creativity and skills development for local students.</p>
+    <p>Volunteers are always welcome! You can sign up for future clean-ups, planting drives, and outreach events at the community center or online through this portal. We appreciate everyone’s contribution to building a better neighborhood.</p>
+  </div>
+
+  <!-- 11. Debugging Tip (instructional comment) -->
+  <!--
+    🔧 Use Chrome DevTools:
+    - Right-click > Inspect to see layout
+    - Use Device Toolbar to test mobile view
+    - Check Console and Network for debugging
+  -->
+
+</body>
+</html>
